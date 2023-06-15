@@ -1,25 +1,36 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {
-  decrement,
+  // decrement,
   increment,
-  incrementByAmount,
+  // incrementByAmount,
   incrementAsync,
-  incrementIfOdd,
+  // incrementIfOdd,
   selectCount,
 } from './counterSlice';
-import styles from './Counter.module.css';
+// import styles from './Counter.module.css';
 
-export function Counter() {
+export default function Counter() {
   const count = useSelector(selectCount);
   const dispatch = useDispatch();
-  const [incrementAmount, setIncrementAmount] = useState('2');
 
-  const incrementValue = Number(incrementAmount) || 0;
+
+
+
+  // const [incrementAmount, setIncrementAmount] = useState('2');
+  // const incrementValue = Number(incrementAmount) || 0;
 
   return (
+  <>
+  
+
+
+
+
+
+  {/* this is commented code for counter  */}
     <div>
-      <div className={styles.row}>
+      {/* <div className={styles.row}>
         <button
           className={styles.button}
           aria-label="Decrement value"
@@ -61,7 +72,8 @@ export function Counter() {
         >
           Add If Odd
         </button>
-      </div>
+      </div> */}
     </div>
+  </>
   );
 }
